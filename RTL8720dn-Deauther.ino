@@ -1,3 +1,7 @@
+#ifdef max
+  #undef max 
+#endif
+
 #include "vector"
 #include "wifi_conf.h"
 #include "map"
@@ -22,8 +26,8 @@ typedef struct {
   uint8_t channel;
 } WiFiScanResult;
 
-char *ssid = "RTL8720dn-Deauther";
-char *pass = "0123456789";
+char *ssid = "My_Network";
+char *pass = "12345678";
 
 int current_channel = 1;
 std::vector<WiFiScanResult> scan_results;
